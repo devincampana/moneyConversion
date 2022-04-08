@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import WebKit
+
 
 class ViewController: UIViewController {
 
@@ -30,10 +32,27 @@ class ViewController: UIViewController {
         
         let canToUsResult = (number!) * 0.8
         let usRoundResult = (canToUsResult * 10) / 10.00
-        displayNumber.text = "🇨🇦C$\(numberString) is $\(canToUsResult) in the US🇺🇸"
+        displayNumber.text = "🇨🇦C$\(numberString) is $\(usRoundResult) in the US🇺🇸"
     }
     
     
+    @IBAction func usToYenButton(_ sender: Any) {
+        let numberString = enterAmount.text!
+        let number = Double(numberString)
+        
+        let usToYen = (number!) * 124.34
+        let usToYenResult = (usToYen * 10) / 10.00
+        displayNumber.text = "🇺🇸$\(numberString) is ¥\(usToYenResult) in Japan🇯🇵"
+    }
+    
+    
+    @IBAction func yenToUsButton(_ sender: Any) {
+        let numberString = enterAmount.text!
+        let number = Double(numberString)
+        let yenToUs = (number!) * 0.0080
+
+        displayNumber.text = "🇯🇵¥\(numberString) is $\(yenToUs) in the US🇺🇸"
+    }
     
     
     

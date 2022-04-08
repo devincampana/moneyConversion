@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D66779CA2800907F007A04C0 /* CurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66779C92800907F007A04C0 /* CurrencyViewController.swift */; };
 		D69617A227FF169E005562F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69617A127FF169E005562F6 /* AppDelegate.swift */; };
 		D69617A427FF169E005562F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69617A327FF169E005562F6 /* SceneDelegate.swift */; };
 		D69617A627FF169E005562F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69617A527FF169E005562F6 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D66779C92800907F007A04C0 /* CurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewController.swift; sourceTree = "<group>"; };
 		D696179E27FF169E005562F6 /* moneyConversion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = moneyConversion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D69617A127FF169E005562F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D69617A327FF169E005562F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +42,7 @@
 		D696179527FF169E005562F6 = {
 			isa = PBXGroup;
 			children = (
+				D66779C92800907F007A04C0 /* CurrencyViewController.swift */,
 				D69617A027FF169E005562F6 /* moneyConversion */,
 				D696179F27FF169E005562F6 /* Products */,
 			);
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D69617A627FF169E005562F6 /* ViewController.swift in Sources */,
+				D66779CA2800907F007A04C0 /* CurrencyViewController.swift in Sources */,
 				D69617A227FF169E005562F6 /* AppDelegate.swift in Sources */,
 				D69617A427FF169E005562F6 /* SceneDelegate.swift in Sources */,
 			);
