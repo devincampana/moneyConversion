@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import WebKit
 
 
 class ViewController: UIViewController {
@@ -54,6 +53,38 @@ class ViewController: UIViewController {
         displayNumber.text = "🇯🇵¥\(numberString) is $\(yenToUs) in the US🇺🇸"
     }
     
+    @IBAction func usToEuroButton(_ sender: Any) {
+        let numberString = enterAmount.text!
+        let number = Double(numberString)
+        let usToEuro = (number!) * 0.92
+        let roundedEuro = round(usToEuro)
+        displayNumber.text = "🇺🇸$\(numberString) is  €\(roundedEuro) in the EU🇪🇺"
+    }
+    
+    @IBAction func euroToUsButton(_ sender: Any) {
+        let numberString = enterAmount.text!
+        let number = Double(numberString)
+        let euroToUs = (number!) * 1.09
+        let roundedUs = round(euroToUs)
+        displayNumber.text =
+        "🇪🇺€\(numberString) is $\(roundedUs) in the US🇺🇸"
+    }
+    
+    @IBAction func usToBTCButton(_ sender: Any) {
+        let numberString = enterAmount.text!
+        let number = Double(numberString)
+        let usToBTC = (number!) * 0.000024
+        displayNumber.text = "$\(numberString) is \(usToBTC) BTC"
+}
+    
+    @IBAction func btcToUsButton(_ sender: Any) {
+        let numberString = enterAmount.text!
+        let number = Double(numberString)
+        let btcToUs = (number!) * 40761
+        displayNumber.text = "\(numberString) BTC is $\(btcToUs) "
+        
+    }
+    
     
     
     
@@ -66,7 +97,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+    }
 
 }
 
